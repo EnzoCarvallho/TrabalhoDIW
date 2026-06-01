@@ -1,0 +1,275 @@
+/* fonte do google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* cores principais */
+:root {
+  --roxo: #6c3fc5;
+  --roxo-escuro: #4b2a91;
+  --fundo: #f4f4f4;
+  --branco: #ffffff;
+  --texto: #222222;
+  --texto-suave: #666666;
+  --borda: #dddddd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--fundo);
+  color: var(--texto);
+}
+
+/* navbar */
+.navbar {
+  background-color: var(--roxo);
+  padding: 12px 20px;
+}
+
+.navbar-brand {
+  color: var(--branco) !important;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.nav-link {
+  color: rgba(255,255,255,0.8) !important;
+}
+
+.nav-link:hover {
+  color: var(--branco) !important;
+}
+
+/* carrossel */
+.carrossel-img {
+  height: 420px;
+  object-fit: cover;
+  object-position: top;
+  filter: brightness(0.5);
+}
+
+.carousel-caption h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.carousel-caption p {
+  font-size: 0.95rem;
+}
+
+.btn-ver-mais {
+  background-color: var(--roxo);
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.btn-ver-mais:hover {
+  background-color: var(--roxo-escuro);
+  color: white;
+}
+
+/* título das seções */
+.titulo-secao {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-bottom: 3px solid var(--roxo);
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+/* cards dos artistas */
+.card {
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--branco);
+  height: 100%;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.card-body h5 {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.card-body p {
+  font-size: 0.85rem;
+  color: var(--texto-suave);
+}
+
+.tag-genero {
+  background-color: var(--roxo);
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.link-card {
+  color: var(--roxo);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link-card:hover {
+  text-decoration: underline;
+}
+
+/* seção sobre */
+.secao-sobre {
+  background-color: var(--branco);
+  border-top: 1px solid var(--borda);
+  border-bottom: 1px solid var(--borda);
+}
+
+.card-sobre {
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  padding: 24px;
+  background-color: var(--fundo);
+  max-width: 480px;
+}
+
+.card-sobre h5 {
+  font-weight: 700;
+  color: var(--roxo);
+  margin-bottom: 10px;
+}
+
+.card-sobre p {
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+  margin-bottom: 5px;
+}
+
+/* footer */
+footer {
+  background-color: var(--roxo);
+  color: rgba(255,255,255,0.8);
+  text-align: center;
+  padding: 16px;
+  font-size: 0.85rem;
+}
+
+/* página de detalhes */
+.foto-artista {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+  border: 1px solid var(--borda);
+}
+
+.nome-artista {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 10px 0 5px;
+}
+
+.bio-artista {
+  font-size: 0.95rem;
+  color: var(--texto-suave);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.info-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-lista li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--borda);
+  font-size: 0.9rem;
+}
+
+.info-lista li span {
+  color: var(--texto-suave);
+  margin-right: 8px;
+}
+
+/* cards das músicas */
+.card-musica {
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--branco);
+}
+
+.card-musica img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.card-musica .info {
+  padding: 10px;
+}
+
+.card-musica .info h6 {
+  font-weight: 700;
+  margin-bottom: 3px;
+  font-size: 0.9rem;
+}
+
+.card-musica .info p {
+  font-size: 0.8rem;
+  color: var(--texto-suave);
+  margin: 0;
+}
+
+/* botão voltar */
+.btn-voltar {
+  color: var(--roxo);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.btn-voltar:hover {
+  text-decoration: underline;
+  color: var(--roxo-escuro);
+}
+
+/* responsividade para celular */
+@media (max-width: 768px) {
+  .carrossel-img {
+    height: 260px;
+  }
+
+  .carousel-caption h2 {
+    font-size: 1.3rem;
+  }
+
+  .nome-artista {
+    font-size: 1.5rem;
+  }
+}
