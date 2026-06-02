@@ -113,13 +113,16 @@ http://localhost:3000
 
 Adicionar print da Home.
 
-![Home](images/home.png)
+<img width="1919" height="945" alt="image" src="https://github.com/user-attachments/assets/c4a6d91a-de7a-4fd0-9e8a-42147631b6d0" />
+<img width="1911" height="944" alt="image" src="https://github.com/user-attachments/assets/37ac8b94-fa01-4844-86f6-9ff440eea4f4" />
+<img width="1919" height="767" alt="image" src="https://github.com/user-attachments/assets/428bc03c-c245-47fe-9d88-003a294ca7d4" />
 
 ### Página de Detalhes
 
 Adicionar print da página de detalhes.
 
-![Detalhes](images/detalhes.png)
+<img width="1907" height="915" alt="image" src="https://github.com/user-attachments/assets/9bf1e900-7a37-4944-af30-9cdf3ad8104e" />
+
 
 ---
 
