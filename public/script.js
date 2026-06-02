@@ -37,7 +37,7 @@ async function carregarIndex() {
 
 artistas.forEach((artista) => {
     grid.innerHTML += `
-      <div class="col-6 col-md-2-4">
+        <div class="col-6 col-md-4">
         <a href="detalhes.html?id=${artista.id}" class="card-artista">
           <img src="${artista.imagemPrincipal}" alt="${artista.nome}">
           <div class="info">
