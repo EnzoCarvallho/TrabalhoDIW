@@ -84,6 +84,27 @@ Exemplos:
 - Uso de URLSearchParams para obter o id da URL
 
 ---
+## Estatísticas Musicais
+
+Foi desenvolvida uma página de estatísticas utilizando a biblioteca Chart.js.
+
+A funcionalidade realiza a leitura dos dados armazenados no JSON Server e gera automaticamente um gráfico de barras apresentando a quantidade de artistas cadastrados por país.
+
+A visualização é atualizada dinamicamente sempre que os dados são alterados por meio das operações de CRUD.
+
+### Demonstração
+
+#### Print 1 - Dados Originais
+
+![alt text](image.png)
+
+Gráfico gerado a partir dos dados originais cadastrados no sistema.
+
+#### Print 2 - Dados Após Alteração
+
+![alt text](image-1.png)
+
+Gráfico atualizado após a inclusão de novos dados no JSON Server, demonstrando o comportamento dinâmico da aplicação.
 
 ## Como executar
 

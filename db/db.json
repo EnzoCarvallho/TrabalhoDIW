@@ -109,6 +109,11 @@
     "anoAtividade": "2004 – presente",
     "destaque": false,
     "imagemPrincipal": "imagens/taylor.jpg"
+  },
+  {
+  "id": 11,
+  "nome": "Anitta",
+  "pais": "Brasil"
   }
 ],
 
