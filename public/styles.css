@@ -287,6 +287,27 @@ footer {
   text-decoration: underline;
   color: var(--roxo-escuro);
 }
+---Pagina de Estatisticas--
+
+.grafico-container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#graficoPais {
+    height: 500px !important;
+}
+
+.card-estatisticas {
+  border: 4px solid var(--borda);
+  border-radius: 8px;
+  padding: 24px;
+  background-color: var(--fundo);
+  width: 100%;
+  max-width: 1400px;
+  margin-bottom: 40px;
+}
 
 @media (max-width: 768px) {
   .carrossel-img {
