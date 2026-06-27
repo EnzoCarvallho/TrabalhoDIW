@@ -1,238 +1,280 @@
 {
   "artistas": [
-  {
-    "id": 1,
-    "nome": "Michael Jackson",
-    "descricao": "O Rei do Pop, um dos artistas mais vendidos da história da música.",
-    "conteudo": "Michael Jackson revolucionou a indústria musical com sua dança, voz e produção. Seus álbuns como Thriller e Bad quebram recordes até hoje.",
-    "genero": "Pop / R&B",
-    "pais": "Estados Unidos",
-    "anoAtividade": "1964 – 2009",
-    "destaque": true,
-    "imagemPrincipal": "imagens/michael.jpg"
-  },
-  {
-    "id": 2,
-    "nome": "Billie Eilish",
-    "descricao": "Fenômeno da geração Z e vencedora de múltiplos Grammys.",
-    "conteudo": "Billie Eilish conquistou o mundo com seu estilo único e músicas como Bad Guy e Happier Than Ever.",
-    "genero": "Pop / Indie Pop",
-    "pais": "Estados Unidos",
-    "anoAtividade": "2015 – presente",
-    "destaque": false,
-    "imagemPrincipal": "imagens/billie.jpg"
-  },
-  {
-    "id": 3,
-    "nome": "Eminem",
-    "descricao": "Um dos rappers mais influentes e premiados da história.",
-    "conteudo": "Eminem redefiniu o rap mundial com sua técnica, velocidade e letras marcantes.",
-    "genero": "Hip-Hop / Rap",
-    "pais": "Estados Unidos",
-    "anoAtividade": "1988 – presente",
-    "destaque": true,
-    "imagemPrincipal": "imagens/eminem.webp"
-  },
-  {
-    "id": 4,
-    "nome": "Bruno Mars",
-    "descricao": "Artista conhecido por misturar pop, funk e R&B.",
-    "conteudo": "Bruno Mars é dono de inúmeros sucessos globais e performances marcantes.",
-    "genero": "Pop / Funk / R&B",
-    "pais": "Estados Unidos",
-    "anoAtividade": "2004 – presente",
-    "destaque": false,
-    "imagemPrincipal": "imagens/bruno.jpg"
-  },
-  {
-    "id": 5,
-    "nome": "Travis Scott",
-    "descricao": "Um dos maiores nomes do trap e hip-hop moderno.",
-    "conteudo": "Travis Scott ganhou destaque mundial com álbuns como Astroworld e Utopia.",
-    "genero": "Trap / Hip-Hop",
-    "pais": "Estados Unidos",
-    "anoAtividade": "2008 – presente",
-    "destaque": true,
-    "imagemPrincipal": "imagens/travis.avif"
-  },
-  {
-    "id": 6,
-    "nome": "The Weeknd",
-    "descricao": "Cantor conhecido por misturar pop, R&B e synthwave.",
-    "conteudo": "The Weeknd alcançou sucesso mundial com hits como Blinding Lights e Starboy.",
-    "genero": "R&B / Pop",
-    "pais": "Canadá",
-    "anoAtividade": "2010 – presente",
-    "destaque": false,
-    "imagemPrincipal": "imagens/weekend.jpg"
-  },
-  {
-    "id": 7,
-    "nome": "Drake",
-    "descricao": "Um dos artistas mais populares da era do streaming.",
-    "conteudo": "Drake domina as paradas musicais há mais de uma década com sucessos globais.",
-    "genero": "Rap / Hip-Hop",
-    "pais": "Canadá",
-    "anoAtividade": "2001 – presente",
-    "destaque": false,
-    "imagemPrincipal": "imagens/drake.jpg"
-  },
-  {
-    "id": 8,
-    "nome": "Kendrick Lamar",
-    "descricao": "Rapper premiado e reconhecido por suas letras profundas.",
-    "conteudo": "Kendrick Lamar é considerado um dos maiores letristas da história do hip-hop.",
-    "genero": "Hip-Hop / Rap",
-    "pais": "Estados Unidos",
-    "anoAtividade": "2003 – presente",
-    "destaque": false,
-    "imagemPrincipal": "imagens/kendrick.webp"
-  },
-  {
-    "id": 9,
-    "nome": "Post Malone",
-    "descricao": "Artista que mistura rap, rock e pop em seu estilo.",
-    "conteudo": "Post Malone conquistou o público com hits como Circles, Rockstar e Sunflower.",
-    "genero": "Rap / Pop",
-    "pais": "Estados Unidos",
-    "anoAtividade": "2011 – presente",
-    "destaque": false,
-    "imagemPrincipal": "imagens/post.jpg"
-  },
-  {
-    "id": 10,
-    "nome": "Taylor Swift",
-    "descricao": "Uma das artistas mais influentes e bem-sucedidas da atualidade.",
-    "conteudo": "Taylor Swift domina a indústria musical com recordes de vendas e turnês históricas.",
-    "genero": "Pop / Country Pop",
-    "pais": "Estados Unidos",
-    "anoAtividade": "2004 – presente",
-    "destaque": false,
-    "imagemPrincipal": "imagens/taylor.jpg"
-  },
-  {
-  "id": 11,
-  "nome": "Anitta",
-  "pais": "Brasil"
-  }
-],
-
+    {
+      "id": "1",
+      "nome": "Michael Jackson",
+      "descricao": "O Rei do Pop, um dos artistas mais vendidos da história da música.",
+      "conteudo": "Michael Jackson revolucionou a indústria musical com sua dança, voz e produção. Seus álbuns como Thriller e Bad quebram recordes até hoje.",
+      "genero": "Pop / R&B",
+      "pais": "Estados Unidos",
+      "anoAtividade": "1964 – 2009",
+      "destaque": true,
+      "imagemPrincipal": "assets/Imagens/michael.jpg"
+    },
+    {
+      "id": "2",
+      "nome": "Billie Eilish",
+      "descricao": "Fenômeno da geração Z e vencedora de múltiplos Grammys.",
+      "conteudo": "Billie Eilish conquistou o mundo com seu estilo único e músicas como Bad Guy e Happier Than Ever.",
+      "genero": "Pop / Indie Pop",
+      "pais": "Estados Unidos",
+      "anoAtividade": "2015 – presente",
+      "destaque": false,
+      "imagemPrincipal": "assets/Imagens/billie.jpg"
+    },
+    {
+      "id": "3",
+      "nome": "Eminem",
+      "descricao": "Um dos rappers mais influentes e premiados da história.",
+      "conteudo": "Eminem redefiniu o rap mundial com sua técnica, velocidade e letras marcantes.",
+      "genero": "Hip-Hop / Rap",
+      "pais": "Estados Unidos",
+      "anoAtividade": "1988 – presente",
+      "destaque": true,
+      "imagemPrincipal": "assets/Imagens/eminem.webp"
+    },
+    {
+      "id": "4",
+      "nome": "Bruno Mars",
+      "descricao": "Artista conhecido por misturar pop, funk e R&B.",
+      "conteudo": "Bruno Mars é dono de inúmeros sucessos globais e performances marcantes.",
+      "genero": "Pop / Funk / R&B",
+      "pais": "Estados Unidos",
+      "anoAtividade": "2004 – presente",
+      "destaque": false,
+      "imagemPrincipal": "assets/Imagens/bruno.jpg"
+    },
+    {
+      "id": "5",
+      "nome": "Travis Scott",
+      "descricao": "Um dos maiores nomes do trap e hip-hop moderno.",
+      "conteudo": "Travis Scott ganhou destaque mundial com álbuns como Astroworld e Utopia.",
+      "genero": "Trap / Hip-Hop",
+      "pais": "Estados Unidos",
+      "anoAtividade": "2008 – presente",
+      "destaque": true,
+      "imagemPrincipal": "assets/Imagens/travis.avif"
+    },
+    {
+      "id": "7",
+      "nome": "Drake",
+      "descricao": "Um dos artistas mais populares da era do streaming.",
+      "conteudo": "Drake domina as paradas musicais há mais de uma década com sucessos globais.",
+      "genero": "Rap / Hip-Hop",
+      "pais": "Canadá",
+      "anoAtividade": "2001 – presente",
+      "destaque": false,
+      "imagemPrincipal": "assets/Imagens/drake.jpg"
+    },
+    {
+      "id": "8",
+      "nome": "Kendrick Lamar",
+      "descricao": "Rapper premiado e reconhecido por suas letras profundas.",
+      "conteudo": "Kendrick Lamar é considerado um dos maiores letristas da história do hip-hop.",
+      "genero": "Hip-Hop / Rap",
+      "pais": "Estados Unidos",
+      "anoAtividade": "2003 – presente",
+      "destaque": false,
+      "imagemPrincipal": "assets/Imagens/kendrick.webp"
+    },
+    {
+      "id": "9",
+      "nome": "Post Malone",
+      "descricao": "Artista que mistura rap, rock e pop em seu estilo.",
+      "conteudo": "Post Malone conquistou o público com hits como Circles, Rockstar e Sunflower.",
+      "genero": "Rap / Pop",
+      "pais": "Estados Unidos",
+      "anoAtividade": "2011 – presente",
+      "destaque": false,
+      "imagemPrincipal": "assets/Imagens/post.jpg"
+    },
+    {
+      "id": "10",
+      "nome": "Taylor Swift",
+      "descricao": "Uma das artistas mais influentes e bem-sucedidas da atualidade.",
+      "conteudo": "Taylor Swift domina a indústria musical com recordes de vendas e turnês históricas.",
+      "genero": "Pop / Country Pop",
+      "pais": "Estados Unidos",
+      "anoAtividade": "2004 – presente",
+      "destaque": false,
+      "imagemPrincipal": "assets/Imagens/taylor.jpg"
+    }
+  ],
   "musicas": [
-  {
-    "id": 1,
-    "artistaId": 1,
-    "nome": "Thriller",
-    "descricao": "Maior sucesso de Michael Jackson.",
-    "imagem": "imagens/michael.jpg"
-  },
-  {
-    "id": 2,
-    "artistaId": 2,
-    "nome": "Bad Guy",
-    "descricao": "Hit que levou Billie Eilish ao topo das paradas.",
-    "imagem": "imagens/billie.jpg"
-  },
-  {
-    "id": 3,
-    "artistaId": 3,
-    "nome": "Lose Yourself",
-    "descricao": "Uma das músicas mais premiadas de Eminem.",
-    "imagem": "imagens/eminem.webp"
-  },
-  {
-    "id": 4,
-    "artistaId": 4,
-    "nome": "Uptown Funk",
-    "descricao": "Sucesso mundial de Bruno Mars.",
-    "imagem": "imagens/bruno.jpg"
-  },
-  {
-    "id": 5,
-    "artistaId": 5,
-    "nome": "SICKO MODE",
-    "descricao": "Um dos maiores hits de Travis Scott.",
-    "imagem": "imagens/travis.avif"
-  },
-  {
-    "id": 6,
-    "artistaId": 6,
-    "nome": "Blinding Lights",
-    "descricao": "Um dos maiores sucessos da década.",
-    "imagem": "imagens/weekend.jpg"
-  },
-  {
-    "id": 7,
-    "artistaId": 7,
-    "nome": "God's Plan",
-    "descricao": "Hit global de Drake.",
-    "imagem": "imagens/drake.jpg"
-  },
-  {
-    "id": 8,
-    "artistaId": 8,
-    "nome": "HUMBLE.",
-    "descricao": "Faixa premiada de Kendrick Lamar.",
-    "imagem": "imagens/kendrick.webp"
-  },
-  {
-    "id": 9,
-    "artistaId": 9,
-    "nome": "Circles",
-    "descricao": "Uma das músicas mais famosas de Post Malone.",
-    "imagem": "imagens/post.jpg"
-  },
-  {
-    "id": 10,
-    "artistaId": 10,
-    "nome": "Cruel Summer",
-    "descricao": "Grande sucesso de Taylor Swift.",
-    "imagem": "imagens/taylor.jpg"
-  },
-  {
-    "id": 11,
-    "artistaId": 1,
-    "nome": "Billie Jean",
-    "descricao": "Clássico eterno de Michael Jackson.",
-    "imagem": "imagens/michael.jpg"
-  },
-  {
-    "id": 12,
-    "artistaId": 3,
-    "nome": "Without Me",
-    "descricao": "Um dos maiores hits de Eminem.",
-    "imagem": "imagens/eminem.webp"
-  },
-  {
-    "id": 13,
-    "artistaId": 5,
-    "nome": "Goosebumps",
-    "descricao": "Hit de Travis Scott com milhões de reproduções.",
-    "imagem": "imagens/travis.avif"
-  },
-  {
-    "id": 14,
-    "artistaId": 6,
-    "nome": "Starboy",
-    "descricao": "Parceria de sucesso com Daft Punk.",
-    "imagem": "imagens/weekend.jpg"
-  },
-  {
-    "id": 15,
-    "artistaId": 10,
-    "nome": "Blank Space",
-    "descricao": "Um dos maiores sucessos da carreira de Taylor Swift.",
-    "imagem": "imagens/taylor.jpg"
-  }
-],
-
-    "categorias": [
-  { "id": 1, "nome": "Pop" },
-  { "id": 2, "nome": "Hip-Hop" },
-  { "id": 3, "nome": "R&B" },
-  { "id": 4, "nome": "Trap" },
-  { "id": 5, "nome": "Indie Pop" },
-  { "id": 6, "nome": "Rap" },
-  { "id": 7, "nome": "Funk" },
-  { "id": 8, "nome": "Soul" }
-]
+    {
+      "id": "1",
+      "artistaId": 1,
+      "nome": "Thriller",
+      "descricao": "Maior sucesso de Michael Jackson.",
+      "imagem": "assets/Imagens/michael.jpg"
+    },
+    {
+      "id": "2",
+      "artistaId": 2,
+      "nome": "Bad Guy",
+      "descricao": "Hit que levou Billie Eilish ao topo das paradas.",
+      "imagem": "assets/Imagens/billie.jpg"
+    },
+    {
+      "id": "3",
+      "artistaId": 3,
+      "nome": "Lose Yourself",
+      "descricao": "Uma das músicas mais premiadas de Eminem.",
+      "imagem": "assets/Imagens/eminem.webp"
+    },
+    {
+      "id": "4",
+      "artistaId": 4,
+      "nome": "Uptown Funk",
+      "descricao": "Sucesso mundial de Bruno Mars.",
+      "imagem": "assets/Imagens/bruno.jpg"
+    },
+    {
+      "id": "5",
+      "artistaId": 5,
+      "nome": "SICKO MODE",
+      "descricao": "Um dos maiores hits de Travis Scott.",
+      "imagem": "assets/Imagens/travis.avif"
+    },
+    {
+      "id": "6",
+      "artistaId": 6,
+      "nome": "Blinding Lights",
+      "descricao": "Um dos maiores sucessos da década.",
+      "imagem": "assets/Imagens/weekend.jpg"
+    },
+    {
+      "id": "7",
+      "artistaId": 7,
+      "nome": "God's Plan",
+      "descricao": "Hit global de Drake.",
+      "imagem": "assets/Imagens/drake.jpg"
+    },
+    {
+      "id": "8",
+      "artistaId": 8,
+      "nome": "HUMBLE.",
+      "descricao": "Faixa premiada de Kendrick Lamar.",
+      "imagem": "assets/Imagens/kendrick.webp"
+    },
+    {
+      "id": "9",
+      "artistaId": 9,
+      "nome": "Circles",
+      "descricao": "Uma das músicas mais famosas de Post Malone.",
+      "imagem": "assets/Imagens/post.jpg"
+    },
+    {
+      "id": "10",
+      "artistaId": 10,
+      "nome": "Cruel Summer",
+      "descricao": "Grande sucesso de Taylor Swift.",
+      "imagem": "assets/Imagens/taylor.jpg"
+    },
+    {
+      "id": "11",
+      "artistaId": 1,
+      "nome": "Billie Jean",
+      "descricao": "Clássico eterno de Michael Jackson.",
+      "imagem": "assets/Imagens/michael.jpg"
+    },
+    {
+      "id": "12",
+      "artistaId": 3,
+      "nome": "Without Me",
+      "descricao": "Um dos maiores hits de Eminem.",
+      "imagem": "assets/Imagens/eminem.webp"
+    },
+    {
+      "id": "13",
+      "artistaId": 5,
+      "nome": "Goosebumps",
+      "descricao": "Hit de Travis Scott com milhões de reproduções.",
+      "imagem": "assets/Imagens/travis.avif"
+    },
+    {
+      "id": "14",
+      "artistaId": 6,
+      "nome": "Starboy",
+      "descricao": "Parceria de sucesso com Daft Punk.",
+      "imagem": "assets/Imagens/weekend.jpg"
+    },
+    {
+      "id": "15",
+      "artistaId": 10,
+      "nome": "Blank Space",
+      "descricao": "Um dos maiores sucessos da carreira de Taylor Swift.",
+      "imagem": "assets/Imagens/taylor.jpg"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "nome": "Pop"
+    },
+    {
+      "id": "2",
+      "nome": "Hip-Hop"
+    },
+    {
+      "id": "3",
+      "nome": "R&B"
+    },
+    {
+      "id": "4",
+      "nome": "Trap"
+    },
+    {
+      "id": "5",
+      "nome": "Indie Pop"
+    },
+    {
+      "id": "6",
+      "nome": "Rap"
+    },
+    {
+      "id": "7",
+      "nome": "Funk"
+    },
+    {
+      "id": "8",
+      "nome": "Soul"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "login": "admin",
+      "senha": "123",
+      "nome": "Administrador",
+      "email": "admin@soudwave.com",
+      "admin": true
+    },
+    {
+      "id": "2",
+      "login": "enzo",
+      "senha": "123",
+      "nome": "Enzo Maciel",
+      "email": "enzommc06@gmail.com",
+      "admin": false
+    },
+    {
+      "nome": "Enzo Maciel Mendonca",
+      "login": "enzinkrl",
+      "email": "enzommc06@gmail.com",
+      "senha": "1234",
+      "admin": false,
+      "id": "D0wnhkar7yU"
+    },
+    {
+      "nome": "joao",
+      "login": "joaozin",
+      "email": "joaozin@gmail.com",
+      "senha": "12345",
+      "admin": false,
+      "id": "XnZto6DIxqs"
+    }
+  ],
+  "favoritos": [],
+  "$schema": "./node_modules/json-server/schema.json"
 }

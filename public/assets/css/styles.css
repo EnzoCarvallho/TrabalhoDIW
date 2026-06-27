@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* cores e variáveis que uso em todo o projeto */
+:root {
+  --roxo: #6c3fc5;
+  --roxo-escuro: #4b2a91;
+  --fundo: #f4f4f4;
+  --branco: #ffffff;
+  --texto: #222222;
+  --texto-suave: #666666;
+  --borda: #dddddd;
+}
+
+/* zerando margens e padding de tudo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--fundo);
+  color: var(--texto);
+}
+
+/* barra de navegação no topo */
+.navbar {
+  background-color: var(--roxo);
+  padding: 12px 20px;
+}
+
+.navbar-brand {
+  color: var(--branco) !important;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.nav-link:hover {
+  color: var(--branco) !important;
+}
+
+/* botão de sair fica vermelho para chamar atenção */
+.link-sair {
+  color: rgba(255, 100, 100, 0.9) !important;
+  font-weight: 600;
+}
+
+.link-sair:hover {
+  color: var(--branco) !important;
+}
+
+/* rodapé simples no final de todas as páginas */
+footer {
+  background-color: var(--roxo);
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 16px;
+  font-size: 0.85rem;
+}
+
+/* título de seção com traço roxo embaixo */
+.titulo-secao {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-bottom: 3px solid var(--roxo);
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+/* texto quando não tem nenhum item pra mostrar */
+.texto-vazio {
+  color: var(--texto-suave);
+  font-size: 0.95rem;
+}
+
+/* botão principal roxo usado em formulários */
+.botao-principal {
+  background-color: var(--roxo);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.botao-principal:hover {
+  background-color: var(--roxo-escuro);
+}
+
+/* botão secundário com borda, sem fundo */
+.botao-secundario {
+  background-color: transparent;
+  color: var(--roxo);
+  border: 2px solid var(--roxo);
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.botao-secundario:hover {
+  background-color: var(--roxo);
+  color: white;
+}
+
+/* botões da tabela do CRUD */
+.botao-editar {
+  background-color: var(--roxo);
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.botao-editar:hover {
+  background-color: var(--roxo-escuro);
+}
+
+.botao-excluir {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.botao-excluir:hover {
+  background-color: #b02a37;
+}
+
+/* botão do carrossel para ver detalhes do artista */
+.btn-ver-mais {
+  background-color: var(--roxo);
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.btn-ver-mais:hover {
+  background-color: var(--roxo-escuro);
+  color: white;
+}
+
+/* seta de voltar na página de detalhes */
+.btn-voltar {
+  color: var(--roxo);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.btn-voltar:hover {
+  text-decoration: underline;
+  color: var(--roxo-escuro);
+}
+
+/* links com destaque roxo, usados nos formulários */
+.link-destaque {
+  color: var(--roxo);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link-destaque:hover {
+  text-decoration: underline;
+}
+
+.link-card {
+  color: var(--roxo);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link-card:hover {
+  text-decoration: underline;
+}
+
+/* carrossel de destaques na home */
+.carrossel-img {
+  height: 600px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.carousel-caption h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.carousel-caption p {
+  font-size: 0.95rem;
+}
+
+/* container do card para o coração ficar posicionado em cima */
+.card-artista-container {
+  position: relative;
+}
+
+/* card clicável de cada artista */
+.card-artista {
+  display: block;
+  text-decoration: none;
+  color: var(--texto);
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--branco);
+  height: 100%;
+  cursor: pointer;
+}
+
+.card-artista:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: var(--texto);
+}
+
+.card-artista img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.card-artista .info {
+  padding: 12px;
+}
+
+.card-artista .info h6 {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.card-artista .info p {
+  font-size: 0.85rem;
+  color: var(--texto-suave);
+  margin: 0;
+}
+
+/* coração de favorito no canto do card */
+.botao-favorito {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.15s;
+}
+
+.botao-favorito:hover {
+  transform: scale(1.15);
+}
+
+/* cards de músicas na página de detalhes */
+.card-musica {
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--branco);
+}
+
+.card-musica img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.card-musica .info {
+  padding: 10px;
+}
+
+.card-musica .info h6 {
+  font-weight: 700;
+  margin-bottom: 3px;
+  font-size: 0.9rem;
+}
+
+.card-musica .info p {
+  font-size: 0.8rem;
+  color: var(--texto-suave);
+  margin: 0;
+}
+
+/* seção sobre o autor na home */
+.secao-sobre {
+  background-color: var(--branco);
+  border-top: 1px solid var(--borda);
+  border-bottom: 1px solid var(--borda);
+}
+
+.card-sobre {
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  padding: 24px;
+  background-color: var(--fundo);
+  max-width: 480px;
+}
+
+.card-sobre h5 {
+  font-weight: 700;
+  color: var(--roxo);
+  margin-bottom: 10px;
+}
+
+.card-sobre p {
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+  margin-bottom: 5px;
+}
+
+/* página de detalhes do artista */
+.foto-artista {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+  border: 1px solid var(--borda);
+}
+
+.nome-artista {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 10px 0 5px;
+}
+
+.bio-artista {
+  font-size: 0.95rem;
+  color: var(--texto-suave);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* lista de informações do artista (país, gênero, período) */
+.info-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-lista li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--borda);
+  font-size: 0.9rem;
+}
+
+.info-lista li span {
+  color: var(--texto-suave);
+  margin-right: 8px;
+}
+
+/* tag colorida de gênero musical */
+.tag-genero {
+  background-color: var(--roxo);
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+/* formulários de login e cadastro */
+.caixa-formulario {
+  background-color: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: 10px;
+  padding: 32px;
+}
+
+.titulo-formulario {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--roxo);
+  margin-bottom: 6px;
+}
+
+.campo-entrada:focus {
+  border-color: var(--roxo);
+  box-shadow: 0 0 0 3px rgba(108, 63, 197, 0.15);
+}
+
+.mensagem-alerta {
+  margin-bottom: 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.texto-alternativo {
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+}
+
+/* tabela do CRUD de artistas */
+.tabela-container {
+  overflow-x: auto;
+}
+
+.tabela-artistas {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.tabela-artistas th,
+.tabela-artistas td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--borda);
+  text-align: left;
+}
+
+.tabela-artistas th {
+  background-color: var(--roxo);
+  color: white;
+  font-weight: 600;
+}
+
+.tabela-artistas tr:hover {
+  background-color: #f0eafa;
+}
+
+.acoes-tabela {
+  display: flex;
+  gap: 8px;
+}
+
+/* gráficos da página de estatísticas */
+.grafico-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#graficoPais {
+  height: 500px !important;
+}
+
+.card-estatisticas {
+  border: 4px solid var(--borda);
+  border-radius: 8px;
+  padding: 24px;
+  background-color: var(--fundo);
+  width: 100%;
+  max-width: 1400px;
+  margin-bottom: 40px;
+}
+
+/* seção e card do autor */
+.card-autor {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  background-color: var(--fundo);
+  border: 1px solid var(--borda);
+  border-radius: 10px;
+  padding: 28px;
+  max-width: 700px;
+}
+
+.foto-autor {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 3px solid var(--roxo);
+  flex-shrink: 0;
+}
+
+.nome-autor {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.curso-autor,
+.turma-autor {
+  font-size: 0.85rem;
+  color: var(--texto-suave);
+  margin-bottom: 2px;
+}
+
+.bio-autor {
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.redes-autor {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.link-rede {
+  background-color: var(--roxo);
+  color: white;
+  text-decoration: none;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.link-rede:hover {
+  background-color: var(--roxo-escuro);
+  color: white;
+}
+
+/* responsivo: empilha foto e texto no celular */
+@media (max-width: 576px) {
+  .card-autor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .redes-autor {
+    justify-content: center;
+  }
+}
+
+/* ajustes para telas menores */
+@media (max-width: 768px) {
+  .carrossel-img {
+    height: 260px;
+  }
+
+  .carousel-caption h2 {
+    font-size: 1.3rem;
+  }
+
+  .nome-artista {
+    font-size: 1.5rem;
+  }
+}
+
+/* coluna de largura personalizada para 5 itens por linha */
+.col-md-2-4 {
+  flex: 0 0 auto;
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+  .col-md-2-4 {
+    width: 50%;
+  }
+}
